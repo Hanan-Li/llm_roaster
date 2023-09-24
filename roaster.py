@@ -62,7 +62,7 @@ def RoastingLoop(speech_recognizer, speech_synthesizer, conversation):
 if __name__ == '__main__':
     model_temperature = 0.7
     if len(sys.argv) == 2:
-        model_temperature = int(sys.argv[1])
+        model_temperature = float(sys.argv[1])
     elif len(sys.argv) > 2:
         print("Too many arguments!")
         exit()
